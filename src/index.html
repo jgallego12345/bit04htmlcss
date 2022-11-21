@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>Tributo a Marie Curie</title>
-    <!--Agregar Favicon-->
+    <title>Aprendamos Historia</title>
 </head>
 <body>
 
@@ -31,24 +31,24 @@
 
         </div>
 
-        <label for="#"><!--Botón fijo para ayuda con asesor-->
+        <label for="check-asesor" class="caja-asesor-ubicacion"><!--Botón fijo para ayuda con asesor-->
             <span class="material-symbols-outlined">support_agent</span>
         </label>
-        <input type="#" id="#" class="#">
+        <input type="checkbox" id="check-asesor" class="caja-asesor">
         <section class="caja-contacto-asesor"><!--Caja para enviar peticion a asesor-->
             <p>Por favor diligencia los campos solicitados y cuentenos como podemos ayudarlo</p>
-           <form>
-                <label for="Nombre">Nombre*</label>
-                <input type="text" value="Nombre">
-                <label for="Email">Email*</label>
-                <label for="Celular">Numero Celular</label>
-                <!--Agregar cuadro para poder -->
-                <label>
-                    Acepta que sus datos sean recopilados y manejados por nosotros.
-                    <input type="checkbox">
-                </label>
-                <button>Enviar</button><!--Deshabilitar el boton cuando no esté Check-->
+            <form>
+                <label for="Nombre">Nombre:*</label>
+                <input type="search" placeholder="Nombre">
+                <label for="Email">Email:*</label>
+                <input type="search" placeholder="Ej: aprendiendodehistoria@gmail.com">
+                <label for="Celular">Numero mobil:*</label>
+                <input type="text" placeholder="Numero celular" >
+                <p>Como podemos ayudarte?</p>
             </form>
+                <textarea cols="30" rows="10" placeholder="Escriba aquí su solicitud."></textarea>
+                <input type="checkbox" name="#" id="#">Acepta que sus datos sean recopilados y manejados por nosotros.
+                <div><button>Enviar</button></div><!--Deshabilitar el boton cuando no esté Check-->
             
             
 
