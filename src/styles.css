@@ -54,30 +54,7 @@ a :hover {
 .menu-check {
     display: none;
 }
-@media screen and (min-width: 768px) {
-    .menu-ubicacion {
-        display: none;
-    }
-    .menu-links{
-        position: relative;
-        top: 1rem;
-        right: 0rem;
-        transform: translatey(0);
-        transition: transform 0s;
-        width: auto;
-        height: auto;
-        background-color: yellow;
-        border: 1px solid black;
-        border-radius: 35px 0px 35px 0px;
-        -moz-border-radius: 35px 0px 35px 0px;
-        -webkit-border-radius: 35px 0px 35px 0px;
-        position: none;
-        padding-top: 30px;
-        padding-left: 10px;
-        padding-right: 20px;
-        padding-bottom: 20px;                   
-    }
-}
+
 
 /* caja para contactar un asesor*/
 
@@ -229,4 +206,200 @@ footer{
     margin-right: auto;
     padding: 10px;
     
+}
+
+/* estilo para medidas grandes*/
+
+@media screen and (min-width: 768px) {
+    .menu-ubicacion {
+        display: none;
+    }
+    .menu-links {
+        color: black;
+        position: absolute;
+        top: 4rem;
+        transform: translatey(0);
+        width: auto;
+        height: auto;
+        position: absolute;
+        display: flex;
+        display: inline-block;
+        margin-right:400px;
+        padding-top:0%; 
+        background-color: rgba(243, 237, 237, 0);
+        border: rgba(255, 255, 255, 0);
+    }
+
+    .botones-header{
+        background-color: white;
+        border-radius: 16px;
+        padding: 8px;
+    }
+    
+    a :hover {
+        text-decoration: none;
+        color: red !important;
+      }
+    
+    .menu-check:checked + .menu-links {
+        transform: translate(0);
+    }
+    .menu-check {
+        display: none;
+    }
+    
+    
+    /* caja para contactar un asesor*/
+    
+    .caja-asesor-ubicacion {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 3px;
+        background-color: lawngreen;
+        border: 2px solid green;
+        border-radius: 35px;
+        z-index: 1;
+    }
+    .caja-contacto-asesor {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        transform: translatex(200%);
+        transition: transform 1s;
+        width: auto;
+        height: auto;
+        background-color: lawngreen;
+        border: 1px solid green;
+        border-radius: 35px 0px 35px 0px;
+        -moz-border-radius: 35px 0px 35px 0px;
+        -webkit-border-radius: 35px 0px 35px 0px;
+        position: fixed;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+    }
+    .caja-asesor:checked + .caja-contacto-asesor {
+        transform: translate(0);
+    }
+    .caja-asesor {
+        display: none;
+    }
+    
+    .caja-contacto-asesor{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: small;
+        display: block;
+        padding-left: 10px;
+        box-sizing:border-box;
+        overflow-y: scroll;
+        width: 250px;
+        height: 250px;
+        margin: 0;
+        }
+    textarea {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: small;
+            width: 200px;
+            height: 100px;
+            overflow-y: scroll;
+            }
+        
+    /*barra del header*/
+    .barra-header a {
+        position: static ;
+        background-color: burlywood;
+        border: 2px solid rosybrown;
+        border-radius: 0px 0px 8px 8px;
+        -moz-border-radius: 0px 0px 8px 8px;
+        -webkit-border-radius: 0px 0px 8px 8px;
+        padding: 10px 5px 5px 5px;
+        color: white;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        text-align: center;
+        font-size: large;
+    }
+    header {
+        text-align: center;
+    }
+    
+    /*pagina Principal*/
+    
+    .estilo-pagina {
+        border: 2px dotted rosybrown;
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 100px 10px 100px;
+        background-color: rgb(243, 231, 231) ;
+        margin-top: 65px;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    h1 {
+        font-family: 'Pinyon Script', cursive;
+        text-align: center;
+        font-size: 45px;
+    }
+    .slogan {
+        text-align: center;
+    }
+    .estilo-de-contenido {
+        border: 2px dotted rosybrown;
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(243, 231, 231);
+
+    
+    }
+    .foto-encabezado{
+        object-fit: cover;
+        width: 500px;
+        height: 500px;
+        border-radius: 16px;
+        padding: 10px;
+        display: block;
+        margin: auto;
+    }
+    
+    .subtitulo{
+        font-weight: 1000;
+        text-align: center;
+    }
+    
+    footer{
+        background-color: grey;
+        display: block;
+        border-radius: 16px;
+        padding: 10px;
+        margin: 5px;
+        border: 2px dotted gray;
+        font-size: small;
+    }
+    .enlace-pie{
+        padding: 10px;
+    }
+    
+    .boton1{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .boton2{
+        width: 45px;
+        height: 45px;
+        border: 1px solid grey;
+        background-color: lightgray;
+        border-radius: 16px;
+    }
+    .fotos-otros-inv{
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 16px;
+        padding: 10px;
+        display: inline-block   }
 }
