@@ -5,69 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>Tributo a Marie Curie</title>
-    <!--Agregar Favicon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans+Mende+Kikakui&family=Pinyon+Script&family=Questrial&display=swap" rel="stylesheet">
+    <title>Marie Curie - Aprendamos Historia</title>
 </head>
 <body>
 
     <nav>
+
         <label for="checkmenu" class="menu-ubicacion">
         <span class="material-symbols-outlined"> menu </span>
         </label>
         <input type="checkbox" id="checkmenu" class="menu-check">
         <div class="menu-links">
             <a href="index.html">Home</a>
-            <!--<a href="marie-curie.html">Personaje de la semana</a>-->
+            <a href="marie-curie.html">Personaje de la semana</a>
             <a href="#">Quienes somos?</a>
-            <a href="#">Contactenos</a>
-            <a href="#">Registrese</a>
-            <a href="#">Otro</a>
+            <a href="#">Otros personajes</a>
         </div>
-    </nav>
 
-    <header>
+        <!--Botón fijo para ayuda con asesor-->
+        <label for="check-asesor" class="caja-asesor-ubicacion">
+            <span class="material-symbols-outlined">support_agent</span>
+        </label>
+        <input type="checkbox" id="check-asesor" class="caja-asesor">
+        <section class="caja-contacto-asesor"><!--Caja para enviar peticion a asesor-->
+            <p>Por favor diligencia los campos solicitados y cuentenos como podemos ayudarlo</p>
+            <form>
+                <label for="Nombre">Nombre:*</label>
+                <input type="search" placeholder="Nombre">
+                <label for="Email">Email:*</label>
+                <input type="search" placeholder="Ej: aprendiendodehistoria@gmail.com">
+                <label for="Celular">Numero mobil:*</label>
+                <input type="text" placeholder="Numero celular" >
+                <p>Como podemos ayudarte?</p>
+            </form>
+                <textarea cols="30" rows="10" placeholder="Escriba aquí su solicitud."></textarea>
+                <input type="checkbox" name="#" id="#">Acepta que sus datos sean recopilados y manejados por nosotros.
+                <div><button>Enviar</button></div><!--Deshabilitar el boton cuando no esté Check-->
+        </section>
+    </nav>
+<!--Barra de header-->
+    <header class="barra-header">
         <a href="#">Contacto</a>
         <a href="#">Iniciar Sesión</a>
         <a href="#">Registrarse</a>
     </header>
 
-    <main>
-        <img src="#" alt="#">
-        <h1>Marie Curie (Madame Curie)</h1>
-        <p>Fecha de deceso</p>
-        <!--agregar una linea divisoria-->
-        
-        <section>
-            <a href="#">Historia</a>
-            <a href="#">Logros</a>
-            <a href="#">Aportes</a>
-            <a href="#">Otros</a>
-        </section>    
+    <main class="estilo-pagina">
+        <h1>Marie Curie</h1>
+        <p class="slogan">"Cuanto más mayor te haces, más sientes que el momento presente debe ser disfrutado, tanto como si fuera un estado de gracia"</p>
 
-        
-        <!--informacion principal sobre la persona--> <!--esto va al lado derecho-->
-        <div>
-            <img src="#" alt="#">
-            <section>
-                <h2>Marie Curie</h2>
-                <p> muy breve reseña sobre la persona</p>
-                <!--Agregar boton de ir-->
+       <!-- <div>
+            <section  class="subtitulo">
+                <p>Cada semana conoceras como personas del común llevaron sus habilidades a lo mas alto</p>
             </section>
+        </div> -->
 
-    <aside>
-        <!--esto va al lado Izquierdo-->
-        <h2>Conoce la historia de otros grandes personajes</h2>
-            <figure>
-                <a href="#">foto personaje</a>
-                <!--Agregar nombre del personaje-->
-            </figure>
+        <!-- sección para la persona de la semana--> <!--esto va al lado derecho-->
+        <div class="estilo-de-contenido">
+            <img class="foto-encabezado" src="./Imagenes/mariecurie-1.png" alt="marie">
+            <section  class="subtitulo">
+                <!--<h2>Marie Curie</h2> -->
+            </section>
+            <p> Maria Salomea Skłodowska-Curie, ​​ más conocida como Marie Curie​​ o Madame Curie, fue una física y química polaca nacionalizada francesa. Pionera en el campo de la radiactividad, es la primera y única persona en recibir dos premios Nobel en distintas especialidades científicas: Física y Química.​ Wikipedia
+                <p>Nacimiento: 7 de noviembre de 1867, Varsovia, Polonia</p> 
+                <p>Fallecimiento: 4 de julio de 1934, Passy, Francia</p>
+                <p>Descubrimientos: Radio, Polonio</p>
+                <p>Premios: Premio Nobel de Física, Premio Nobel de Química,</p>
+            </p>
+            <!-- <div class="boton1">
+                <a href="./marie-curie.html"><button class="boton2" >ir</button></a>
+            </div> -->
+            <hr>
 
-            <figure>
-                <a href="#">foto personaje</a>
-                <!--Agregar nombre del personaje-->
-            </figure>
-    </aside>
+            <aside>
+                <!--esto va al lado Izquierdo-->
+                <p class="subtitulo">Conoce la historia de otros grandes personajes</p>
+                    <div class="fotos-otros-inv">
+                        <a href="https://es.wikipedia.org/wiki/Albert_Einstein" target="_blank" rel="noopener noreferrer"><img class="fotos-otros-inv" src="./Imagenes/einstein.jpg" alt=""></a>
+                    </div>
+                    <div class="fotos-otros-inv">
+                        <a href="https://es.wikipedia.org/wiki/Nikola_Tesla" target="_blank" rel="noopener noreferrer"><img class="fotos-otros-inv" src="./Imagenes/nikola-tesla.jpeg" alt=""></a>
+                    </div>
+            </aside>
 
 
         </div>
@@ -76,13 +101,24 @@
 
     </main>
     <footer>
-        <!--esto va al lado derecho-->
-        <a href="#">Contacto</a> <!--conectar con contacto del header-->
-        <a href="#">Registrarse</a> <!--conectar con Registarse del header-->
-        <a href="#">Conoce sobre nosotros</a> <!--Mision y vision-->
-        <a href="#">otros</a>
-
-        <!--Esto va al lado Izquierdo-->
+        <div class="enlace-pie">
+            <!--esto va al lado derecho-->
+            <div>
+                <a href="#">Contacto</a> <!--conectar con contacto del header-->
+            </div>
+            <div>
+                <a href="#">Registrarse</a> <!--conectar con Registarse del header-->
+            </div>
+            <div>
+                <a href="#">Conoce sobre nosotros</a> <!--Mision y vision-->
+            </div>
+            <div>
+                <a href="#">otros</a>
+            </div>
+        
+        </div>
+        
+        
         <p><small>&copy; Creado y Diseñado por Avalon Joint Effort. 2022</small></p>
     </footer>
     

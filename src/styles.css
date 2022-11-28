@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
     background-image: url(./Imagenes/laboratorio.jpg);
@@ -150,6 +151,7 @@ textarea {
     color: white;
     box-shadow: 2px 2px 2px 2px lightgray;
     text-align: center;
+    font-size: small;
 }
 header {
     text-align: center;
@@ -195,4 +197,36 @@ h1 {
 
 footer{
     background-color: grey;
+    display: block;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px dotted gray;
+    font-size: small;
+}
+.enlace-pie{
+    padding: 10px;
+}
+
+.boton1{
+    display: flex;
+    justify-content: center;
+    
+}
+.boton2{
+    width: 45px;
+    height: 45px;
+    border: 1px solid grey;
+    background-color: lightgray;
+    border-radius: 16px;
+}
+.fotos-otros-inv{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    
 }
